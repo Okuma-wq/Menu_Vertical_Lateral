@@ -16,29 +16,43 @@
     padding-top: 20px;
   }
   
-  /* Sidebar links */
   .sidebar ul {
     list-style-type: none;
   }
   
-  .sidebar ul li {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .sidebar ul li a {
+  .regiao {
+    padding: 30px 30px;
     text-decoration: none;
-    height: 2.5em;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
+    display: flex;
+    cursor: pointer;
   }
   
-  /* Hover effect */
-  .sidebar ul li a:hover {
+  .regiao:hover {
     background-color: #575757;
+  }
+
+  .estados{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 250px;
+    background-color: #111;
+    margin-top: -30px;
+  }
+
+  .estado{
+    padding: 30px 30px;
+    cursor: pointer;
+  }
+
+  .estado:hover{
+    background-color: #575757;
+  }
+
+  .regiao:hover>.estados{
+    display: block;
   }
   
   /* Style the content section */
